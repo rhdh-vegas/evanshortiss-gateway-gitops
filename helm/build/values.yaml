@@ -1,0 +1,15 @@
+app:
+  name: evanshortiss-poi-gateway-app
+  namespace: evanshortiss
+  cluster: .apps.rosa-bvg5j.wov7.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-vegas/evanshortiss-gateway
+  org: rhdh-vegas
+  name: evanshortiss-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: evanshortiss/poi-gateway-app
+  tag: latest
